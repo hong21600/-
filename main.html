@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="pc/index.html">电脑版</a>
+		<a href="mobile/index.html">移动版</a>
+		
+		
+		<script type="text/javascript">
+			//获得平板电脑手机浏览器信息
+			var agent = navigator.userAgent.toLocaleLowerCase();
+			
+			if(agent.indexOf('iphone') == -1 && agent.indexOf('android') == -1) {
+				
+				location.href = 'pc/index.html';
+			} else {
+				location.href = 'mobile/index.html';
+			}
+			
+		</script>
+	</body>
+</html>
